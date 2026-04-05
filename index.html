@@ -1,211 +1,202 @@
-{\rtf1\ansi\ansicpg1251\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red111\green14\blue195;\red236\green241\blue247;}
-{\*\expandedcolortbl;;\cssrgb\c51765\c18824\c80784;\cssrgb\c94118\c95686\c97647;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florist Concept — Главная</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,300&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rose-light: #fdf5f3;
+            --rose-dark: #e2b4ad;
+            --rose-deep: #c08e86;
+            --text-main: #4a4a4a;
+            --radius-lg: 40px; /* Большие мягкие скругления для фото */
+            --radius-sm: 50px; /* Для кнопок */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fffcf9;
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        .serif-font {
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Скругления */
+        .rounded-img { border-radius: var(--radius-lg); }
+        .rounded-btn { border-radius: var(--radius-sm); }
+        
+        .hero-bg {
+            background: linear-gradient(180deg, #fdf5f3 0%, #fffcf9 100%);
+        }
+        
+        /* Исправленные кнопки */
+        .btn-primary {
+            background-color: var(--rose-dark);
+            color: white !important;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px -5px rgba(226, 180, 173, 0.4);
+        }
+        .btn-primary:hover {
+            background-color: var(--rose-deep);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px -5px rgba(226, 180, 173, 0.5);
+        }
+        
+        .btn-secondary {
+            border: 1px solid var(--rose-dark);
+            color: var(--rose-dark) !important;
+            transition: all 0.4s ease;
+        }
+        .btn-secondary:hover {
+            background-color: var(--rose-light);
+            border-color: var(--rose-deep);
+            color: var(--rose-deep) !important;
+        }
 
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
-<html lang="ru">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Florist Concept \'97 \uc0\u1043 \u1083 \u1072 \u1074 \u1085 \u1072 \u1103 </title>\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,300&family=Inter:wght@300;400&display=swap" rel="stylesheet">\
-    <style>\
-        :root \{\
-            --rose-light: #fdf5f3;\
-            --rose-dark: #e2b4ad;\
-            --rose-deep: #c08e86;\
-            --text-main: #4a4a4a;\
-            --radius-lg: 40px; /* \uc0\u1041 \u1086 \u1083 \u1100 \u1096 \u1080 \u1077  \u1084 \u1103 \u1075 \u1082 \u1080 \u1077  \u1089 \u1082 \u1088 \u1091 \u1075 \u1083 \u1077 \u1085 \u1080 \u1103  \u1076 \u1083 \u1103  \u1092 \u1086 \u1090 \u1086  */\
-            --radius-sm: 50px; /* \uc0\u1044 \u1083 \u1103  \u1082 \u1085 \u1086 \u1087 \u1086 \u1082  */\
-        \}\
-        body \{\
-            font-family: 'Inter', sans-serif;\
-            background-color: #fffcf9;\
-            color: var(--text-main);\
-            overflow-x: hidden;\
-            line-height: 1.6;\
-        \}\
-        .serif-font \{\
-            font-family: 'Raleway', sans-serif;\
-            letter-spacing: 0.05em;\
-        \}\
-        \
-        /* \uc0\u1057 \u1082 \u1088 \u1091 \u1075 \u1083 \u1077 \u1085 \u1080 \u1103  */\
-        .rounded-img \{ border-radius: var(--radius-lg); \}\
-        .rounded-btn \{ border-radius: var(--radius-sm); \}\
-        \
-        .hero-bg \{\
-            background: linear-gradient(180deg, #fdf5f3 0%, #fffcf9 100%);\
-        \}\
-        \
-        /* \uc0\u1048 \u1089 \u1087 \u1088 \u1072 \u1074 \u1083 \u1077 \u1085 \u1085 \u1099 \u1077  \u1082 \u1085 \u1086 \u1087 \u1082 \u1080  */\
-        .btn-primary \{\
-            background-color: var(--rose-dark);\
-            color: white !important;\
-            transition: all 0.4s ease;\
-            box-shadow: 0 10px 20px -5px rgba(226, 180, 173, 0.4);\
-        \}\
-        .btn-primary:hover \{\
-            background-color: var(--rose-deep);\
-            transform: translateY(-2px);\
-            box-shadow: 0 15px 25px -5px rgba(226, 180, 173, 0.5);\
-        \}\
-        \
-        .btn-secondary \{\
-            border: 1px solid var(--rose-dark);\
-            color: var(--rose-dark) !important;\
-            transition: all 0.4s ease;\
-        \}\
-        .btn-secondary:hover \{\
-            background-color: var(--rose-light);\
-            border-color: var(--rose-deep);\
-            color: var(--rose-deep) !important;\
-        \}\
-\
-        .fade-in \{\
-            animation: fadeIn 1.5s ease-out forwards;\
-        \}\
-        @keyframes fadeIn \{\
-            from \{ opacity: 0; transform: translateY(30px); \}\
-            to \{ opacity: 1; transform: translateY(0); \}\
-        \}\
-\
-        .img-card \{\
-            background-color: #f7edea;\
-            display: flex;\
-            align-items: center;\
-            justify-content: center;\
-            color: #d1b8b4;\
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);\
-            overflow: hidden;\
-        \}\
-        .img-card:hover \{\
-            transform: scale(1.02);\
-            box-shadow: 0 30px 60px -15px rgba(0,0,0,0.08);\
-        \}\
-    </style>\
-</head>\
-<body class="antialiased">\
-\
-    <!-- \uc0\u1053 \u1072 \u1074 \u1080 \u1075 \u1072 \u1094 \u1080 \u1103  -->\
-    <nav class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-xl border-b border-rose-light/30 py-5 px-10 flex justify-between items-center">\
-        <div class="serif-font text-xl tracking-[0.3em] uppercase font-light">Florist Concept</div>\
-        <div class="hidden md:flex gap-10 text-[9px] uppercase tracking-[0.2em] font-medium text-gray-500">\
-            <a href="#" class="hover:text-rose-dark transition">\uc0\u1050 \u1072 \u1090 \u1072 \u1083 \u1086 \u1075 </a>\
-            <a href="#" class="hover:text-rose-dark transition">\uc0\u1041 \u1080 \u1079 \u1085 \u1077 \u1089 \u1091 </a>\
-            <a href="#" class="hover:text-rose-dark transition">\uc0\u1044 \u1077 \u1082 \u1086 \u1088 </a>\
-            <a href="#" class="hover:text-rose-dark transition">\uc0\u1054  \u1085 \u1072 \u1089 </a>\
-        </div>\
-        <button class="btn-primary px-8 py-2.5 rounded-btn text-[9px] uppercase tracking-widest font-bold">\uc0\u1057 \u1074 \u1103 \u1079 \u1072 \u1090 \u1100 \u1089 \u1103 </button>\
-    </nav>\
-\
-    <!-- Hero Section -->\
-    <section class="hero-bg min-h-[90vh] flex items-center justify-center pt-20 px-6 text-center">\
-        <div class="max-w-5xl mx-auto fade-in">\
-            <span class="text-[10px] uppercase tracking-[0.6em] text-rose-dark mb-6 block font-bold">Premium Floral Service</span>\
-            <h1 class="text-5xl md:text-8xl serif-font font-extralight mb-10 uppercase tracking-tight leading-[1.1]">\
-                \uc0\u1062 \u1074 \u1077 \u1090 \u1086 \u1095 \u1085 \u1072 \u1103  \u1101 \u1089 \u1090 \u1077 \u1090 \u1080 \u1082 \u1072  <br> <span class="italic font-light text-rose-dark">\u1074  \u1082 \u1072 \u1078 \u1076 \u1086 \u1084  \u1083 \u1077 \u1087 \u1077 \u1089 \u1090 \u1082 \u1077 </span>\
-            </h1>\
-            <p class="text-gray-400 font-light max-w-xl mx-auto mb-12 text-base md:text-lg leading-relaxed">\
-                \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1077 \u1084  \u1072 \u1074 \u1090 \u1086 \u1088 \u1089 \u1082 \u1080 \u1077  \u1073 \u1091 \u1082 \u1077 \u1090 \u1099  \u1089  \u1076 \u1091 \u1096 \u1086 \u1081 . \u1044 \u1086 \u1089 \u1090 \u1072 \u1074 \u1082 \u1072  \u1074  \u1052 \u1072 \u1093 \u1072 \u1095 \u1082 \u1072 \u1083 \u1077  \u1080  \u1041 \u1091 \u1081 \u1085 \u1072 \u1082 \u1089 \u1082 \u1077  \u1076 \u1083 \u1103  \u1090 \u1077 \u1093 , \u1082 \u1090 \u1086  \u1094 \u1077 \u1085 \u1080 \u1090  \u1080 \u1089 \u1082 \u1083 \u1102 \u1095 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1086 \u1089 \u1090 \u1100 .\
-            </p>\
-            <div class="flex flex-col sm:flex-row justify-center gap-6">\
-                <a href="#catalogs" class="btn-primary px-12 py-5 rounded-btn text-[11px] uppercase tracking-[0.2em] font-bold">\uc0\u1055 \u1077 \u1088 \u1077 \u1081 \u1090 \u1080  \u1074  \u1082 \u1072 \u1090 \u1072 \u1083 \u1086 \u1075 </a>\
-                <a href="#services" class="btn-secondary px-12 py-5 rounded-btn text-[11px] uppercase tracking-[0.2em] font-bold">\uc0\u1053 \u1072 \u1096 \u1080  \u1091 \u1089 \u1083 \u1091 \u1075 \u1080 </a>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- \uc0\u1042 \u1099 \u1073 \u1086 \u1088  \u1075 \u1086 \u1088 \u1086 \u1076 \u1072  -->\
-    <section id="catalogs" class="py-32 px-6 max-w-7xl mx-auto">\
-        <div class="text-center mb-20">\
-            <h2 class="text-3xl md:text-4xl serif-font font-light uppercase tracking-widest mb-4">\uc0\u1042 \u1099 \u1073 \u1077 \u1088 \u1080 \u1090 \u1077  \u1074 \u1072 \u1096  \u1075 \u1086 \u1088 \u1086 \u1076 </h2>\
-            <div class="h-px w-20 bg-rose-dark mx-auto opacity-30"></div>\
-        </div>\
-        \
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">\
-            <!-- \uc0\u1052 \u1072 \u1093 \u1072 \u1095 \u1082 \u1072 \u1083 \u1072  -->\
-            <div class="group cursor-pointer">\
-                <div class="img-card h-[550px] rounded-img relative mb-8">\
-                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700"></div>\
-                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">\uc0\u1052 \u1072 \u1093 \u1072 \u1095 \u1082 \u1072 \u1083 \u1072 </span>\
-                    <!--  -->\
-                </div>\
-                <div class="text-center">\
-                    <h3 class="serif-font text-2xl font-light mb-2 uppercase tracking-widest">\uc0\u1052 \u1072 \u1093 \u1072 \u1095 \u1082 \u1072 \u1083 \u1072 </h3>\
-                    <p class="text-[10px] uppercase tracking-widest text-gray-400 italic">\uc0\u1057 \u1090 \u1080 \u1083 \u1100  \u1080  \u1088 \u1086 \u1089 \u1082 \u1086 \u1096 \u1100  \u1084 \u1077 \u1075 \u1072 \u1087 \u1086 \u1083 \u1080 \u1089 \u1072 </p>\
-                </div>\
-            </div>\
-            <!-- \uc0\u1041 \u1091 \u1081 \u1085 \u1072 \u1082 \u1089 \u1082  -->\
-            <div class="group cursor-pointer">\
-                <div class="img-card h-[550px] rounded-img relative mb-8">\
-                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700"></div>\
-                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">\uc0\u1041 \u1091 \u1081 \u1085 \u1072 \u1082 \u1089 \u1082 </span>\
-                    <!--  -->\
-                </div>\
-                <div class="text-center">\
-                    <h3 class="serif-font text-2xl font-light mb-2 uppercase tracking-widest">\uc0\u1041 \u1091 \u1081 \u1085 \u1072 \u1082 \u1089 \u1082 </h3>\
-                    <p class="text-[10px] uppercase tracking-widest text-gray-400 italic">\uc0\u1059 \u1102 \u1090  \u1080  \u1085 \u1077 \u1078 \u1085 \u1086 \u1089 \u1090 \u1100  \u1075 \u1086 \u1088 \u1085 \u1086 \u1075 \u1086  \u1082 \u1088 \u1072 \u1103 </p>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- \uc0\u1059 \u1089 \u1083 \u1091 \u1075 \u1080  -->\
-    <section id="services" class="py-32 bg-white px-6">\
-        <div class="max-w-6xl mx-auto space-y-40">\
-            \
-            <!-- B2B -->\
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">\
-                <div class="order-2 md:order-1 px-4">\
-                    <h4 class="text-[10px] uppercase tracking-[0.5em] text-rose-dark mb-6 font-bold">B2B Partnership</h4>\
-                    <h2 class="text-4xl md:text-5xl serif-font font-light mb-8 leading-tight italic">\uc0\u1069 \u1089 \u1090 \u1077 \u1090 \u1080 \u1082 \u1072  \u1074 \u1072 \u1096 \u1077 \u1075 \u1086  <br>\u1073 \u1080 \u1079 \u1085 \u1077 \u1089 \u1072 </h2>\
-                    <p class="text-gray-400 font-light mb-10 text-base leading-relaxed">\
-                        \uc0\u1052 \u1099  \u1087 \u1088 \u1077 \u1076 \u1083 \u1072 \u1075 \u1072 \u1077 \u1084  \u1080 \u1085 \u1076 \u1080 \u1074 \u1080 \u1076 \u1091 \u1072 \u1083 \u1100 \u1085 \u1099 \u1077  \u1091 \u1089 \u1083 \u1086 \u1074 \u1080 \u1103  \u1076 \u1083 \u1103  \u1088 \u1077 \u1089 \u1090 \u1086 \u1088 \u1072 \u1085 \u1086 \u1074 , \u1086 \u1090 \u1077 \u1083 \u1077 \u1081  \u1080  \u1086 \u1092 \u1080 \u1089 \u1086 \u1074 . \u1055 \u1086 \u1076 \u1087 \u1080 \u1089 \u1082 \u1072  \u1085 \u1072  \u1094 \u1074 \u1077 \u1090 \u1099 , \u1086 \u1092 \u1086 \u1088 \u1084 \u1083 \u1077 \u1085 \u1080 \u1077  \u1074 \u1080 \u1090 \u1088 \u1080 \u1085  \u1080  \u1082 \u1086 \u1088 \u1087 \u1086 \u1088 \u1072 \u1090 \u1080 \u1074 \u1085 \u1099 \u1077  \u1087 \u1086 \u1076 \u1072 \u1088 \u1082 \u1080 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1087 \u1086 \u1076 \u1095 \u1077 \u1088 \u1082 \u1085 \u1091 \u1090  \u1074 \u1072 \u1096  \u1089 \u1090 \u1072 \u1090 \u1091 \u1089 .\
-                    </p>\
-                    <button class="border-b-2 border-rose-light pb-2 text-[10px] uppercase tracking-[0.3em] font-bold hover:border-rose-dark transition-all">\uc0\u1055 \u1086 \u1083 \u1091 \u1095 \u1080 \u1090 \u1100  \u1087 \u1088 \u1077 \u1076 \u1083 \u1086 \u1078 \u1077 \u1085 \u1080 \u1077 </button>\
-                </div>\
-                <div class="order-1 md:order-2 img-card h-[450px] rounded-img shadow-2xl shadow-rose-light">\
-                    <span class="text-[10px] uppercase tracking-widest opacity-30">Business Concept</span>\
-                </div>\
-            </div>\
-\
-            <!-- \uc0\u1044 \u1077 \u1082 \u1086 \u1088  -->\
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">\
-                <div class="img-card h-[450px] rounded-img shadow-2xl shadow-rose-light">\
-                    <span class="text-[10px] uppercase tracking-widest opacity-30">Wedding & Events</span>\
-                </div>\
-                <div class="px-4">\
-                    <h4 class="text-[10px] uppercase tracking-[0.5em] text-rose-dark mb-6 font-bold">Event Decor</h4>\
-                    <h2 class="text-4xl md:text-5xl serif-font font-light mb-8 leading-tight italic">\uc0\u1052 \u1072 \u1075 \u1080 \u1103  \u1074 \u1072 \u1078 \u1085 \u1099 \u1093  <br>\u1089 \u1086 \u1073 \u1099 \u1090 \u1080 \u1081 </h2>\
-                    <p class="text-gray-400 font-light mb-10 text-base leading-relaxed">\
-                        \uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1077 \u1084  \u1094 \u1074 \u1077 \u1090 \u1086 \u1095 \u1085 \u1086 \u1077  \u1086 \u1092 \u1086 \u1088 \u1084 \u1083 \u1077 \u1085 \u1080 \u1077  \u1076 \u1083 \u1103  \u1089 \u1074 \u1072 \u1076 \u1077 \u1073  \u1080  \u1090 \u1086 \u1088 \u1078 \u1077 \u1089 \u1090 \u1074 . \u1050 \u1072 \u1078 \u1076 \u1099 \u1081  \u1087 \u1088 \u1086 \u1077 \u1082 \u1090  \u1076 \u1083 \u1103  \u1085 \u1072 \u1089  \'97 \u1101 \u1090 \u1086  \u1086 \u1090 \u1076 \u1077 \u1083 \u1100 \u1085 \u1072 \u1103  \u1080 \u1089 \u1090 \u1086 \u1088 \u1080 \u1103 , \u1088 \u1072 \u1089 \u1089 \u1082 \u1072 \u1079 \u1072 \u1085 \u1085 \u1072 \u1103  \u1103 \u1079 \u1099 \u1082 \u1086 \u1084  \u1094 \u1074 \u1077 \u1090 \u1086 \u1074  \u1080  \u1076 \u1077 \u1082 \u1086 \u1088 \u1072 .\
-                    </p>\
-                    <button class="border-b-2 border-rose-light pb-2 text-[10px] uppercase tracking-[0.3em] font-bold hover:border-rose-dark transition-all">\uc0\u1057 \u1084 \u1086 \u1090 \u1088 \u1077 \u1090 \u1100  \u1087 \u1086 \u1088 \u1090 \u1092 \u1086 \u1083 \u1080 \u1086 </button>\
-                </div>\
-            </div>\
-            \
-        </div>\
-    </section>\
-\
-    <!-- \uc0\u1055 \u1086 \u1076 \u1074 \u1072 \u1083  -->\
-    <footer class="py-24 bg-rose-light/20 text-center px-6">\
-        <div class="serif-font text-2xl tracking-[0.5em] uppercase font-light mb-10">Florist Concept</div>\
-        <div class="flex justify-center gap-12 mb-16 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">\
-            <a href="#" class="hover:text-rose-dark transition">Instagram</a>\
-            <a href="#" class="hover:text-rose-dark transition">WhatsApp</a>\
-            <a href="#" class="hover:text-rose-dark transition">Telegram</a>\
-        </div>\
-        <div class="text-[9px] uppercase tracking-[0.6em] text-gray-300 font-light italic">\
-            \uc0\u1048 \u1089 \u1082 \u1091 \u1089 \u1089 \u1090 \u1074 \u1086  \u1074  \u1076 \u1077 \u1090 \u1072 \u1083 \u1103 \u1093  \'97 2024\
-        </div>\
-    </footer>\
-\
-</body>\
-</html>}
+        .fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .img-card {
+            background-color: #f7edea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d1b8b4;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .img-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 30px 60px -15px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Навигация -->
+    <nav class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-xl border-b border-rose-light/30 py-5 px-10 flex justify-between items-center">
+        <div class="serif-font text-xl tracking-[0.3em] uppercase font-light">Florist Concept</div>
+        <div class="hidden md:flex gap-10 text-[9px] uppercase tracking-[0.2em] font-medium text-gray-500">
+            <a href="#" class="hover:text-rose-dark transition">Каталог</a>
+            <a href="#" class="hover:text-rose-dark transition">Бизнесу</a>
+            <a href="#" class="hover:text-rose-dark transition">Декор</a>
+            <a href="#" class="hover:text-rose-dark transition">О нас</a>
+        </div>
+        <button class="btn-primary px-8 py-2.5 rounded-btn text-[9px] uppercase tracking-widest font-bold">Связаться</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-[90vh] flex items-center justify-center pt-20 px-6 text-center">
+        <div class="max-w-5xl mx-auto fade-in">
+            <span class="text-[10px] uppercase tracking-[0.6em] text-rose-dark mb-6 block font-bold">Premium Floral Service</span>
+            <h1 class="text-5xl md:text-8xl serif-font font-extralight mb-10 uppercase tracking-tight leading-[1.1]">
+                Цветочная эстетика <br> <span class="italic font-light text-rose-dark">в каждом лепестке</span>
+            </h1>
+            <p class="text-gray-400 font-light max-w-xl mx-auto mb-12 text-base md:text-lg leading-relaxed">
+                Создаем авторские букеты с душой. Доставка в Махачкале и Буйнакске для тех, кто ценит исключительность.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#catalogs" class="btn-primary px-12 py-5 rounded-btn text-[11px] uppercase tracking-[0.2em] font-bold">Перейти в каталог</a>
+                <a href="#services" class="btn-secondary px-12 py-5 rounded-btn text-[11px] uppercase tracking-[0.2em] font-bold">Наши услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Выбор города -->
+    <section id="catalogs" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl md:text-4xl serif-font font-light uppercase tracking-widest mb-4">Выберите ваш город</h2>
+            <div class="h-px w-20 bg-rose-dark mx-auto opacity-30"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <!-- Махачкала -->
+            <div class="group cursor-pointer">
+                <div class="img-card h-[550px] rounded-img relative mb-8">
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700"></div>
+                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">Махачкала</span>
+                    <!--  -->
+                </div>
+                <div class="text-center">
+                    <h3 class="serif-font text-2xl font-light mb-2 uppercase tracking-widest">Махачкала</h3>
+                    <p class="text-[10px] uppercase tracking-widest text-gray-400 italic">Стиль и роскошь мегаполиса</p>
+                </div>
+            </div>
+            <!-- Буйнакск -->
+            <div class="group cursor-pointer">
+                <div class="img-card h-[550px] rounded-img relative mb-8">
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700"></div>
+                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">Буйнакск</span>
+                    <!--  -->
+                </div>
+                <div class="text-center">
+                    <h3 class="serif-font text-2xl font-light mb-2 uppercase tracking-widest">Буйнакск</h3>
+                    <p class="text-[10px] uppercase tracking-widest text-gray-400 italic">Уют и нежность горного края</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="py-32 bg-white px-6">
+        <div class="max-w-6xl mx-auto space-y-40">
+            
+            <!-- B2B -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div class="order-2 md:order-1 px-4">
+                    <h4 class="text-[10px] uppercase tracking-[0.5em] text-rose-dark mb-6 font-bold">B2B Partnership</h4>
+                    <h2 class="text-4xl md:text-5xl serif-font font-light mb-8 leading-tight italic">Эстетика вашего <br>бизнеса</h2>
+                    <p class="text-gray-400 font-light mb-10 text-base leading-relaxed">
+                        Мы предлагаем индивидуальные условия для ресторанов, отелей и офисов. Подписка на цветы, оформление витрин и корпоративные подарки, которые подчеркнут ваш статус.
+                    </p>
+                    <button class="border-b-2 border-rose-light pb-2 text-[10px] uppercase tracking-[0.3em] font-bold hover:border-rose-dark transition-all">Получить предложение</button>
+                </div>
+                <div class="order-1 md:order-2 img-card h-[450px] rounded-img shadow-2xl shadow-rose-light">
+                    <span class="text-[10px] uppercase tracking-widest opacity-30">Business Concept</span>
+                </div>
+            </div>
+
+            <!-- Декор -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div class="img-card h-[450px] rounded-img shadow-2xl shadow-rose-light">
+                    <span class="text-[10px] uppercase tracking-widest opacity-30">Wedding & Events</span>
+                </div>
+                <div class="px-4">
+                    <h4 class="text-[10px] uppercase tracking-[0.5em] text-rose-dark mb-6 font-bold">Event Decor</h4>
+                    <h2 class="text-4xl md:text-5xl serif-font font-light mb-8 leading-tight italic">Магия важных <br>событий</h2>
+                    <p class="text-gray-400 font-light mb-10 text-base leading-relaxed">
+                        Создаем цветочное оформление для свадеб и торжеств. Каждый проект для нас — это отдельная история, рассказанная языком цветов и декора.
+                    </p>
+                    <button class="border-b-2 border-rose-light pb-2 text-[10px] uppercase tracking-[0.3em] font-bold hover:border-rose-dark transition-all">Смотреть портфолио</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="py-24 bg-rose-light/20 text-center px-6">
+        <div class="serif-font text-2xl tracking-[0.5em] uppercase font-light mb-10">Florist Concept</div>
+        <div class="flex justify-center gap-12 mb-16 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">
+            <a href="#" class="hover:text-rose-dark transition">Instagram</a>
+            <a href="#" class="hover:text-rose-dark transition">WhatsApp</a>
+            <a href="#" class="hover:text-rose-dark transition">Telegram</a>
+        </div>
+        <div class="text-[9px] uppercase tracking-[0.6em] text-gray-300 font-light italic">
+            Искусство в деталях — 2024
+        </div>
+    </footer>
+
+</body>
+</html>

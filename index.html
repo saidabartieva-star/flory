@@ -15,6 +15,9 @@
             --radius-lg: 40px; /* Большие мягкие скругления для фото */
             --radius-sm: 50px; /* Для кнопок */
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Inter', sans-serif;
             background-color: #fffcf9;
@@ -85,15 +88,15 @@
 <body class="antialiased">
 
     <!-- Навигация -->
-    <nav class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-xl border-b border-rose-light/30 py-5 px-10 flex justify-between items-center">
+    <nav class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-xl border-b border-rose-light/30 py-5 px-6 md:px-10 flex justify-between items-center">
         <div class="serif-font text-xl tracking-[0.3em] uppercase font-light">Florist Concept</div>
-        <div class="hidden md:flex gap-10 text-[9px] uppercase tracking-[0.2em] font-medium text-gray-500">
-            <a href="#" class="hover:text-rose-dark transition">Каталог</a>
-            <a href="#" class="hover:text-rose-dark transition">Бизнесу</a>
-            <a href="#" class="hover:text-rose-dark transition">Декор</a>
+        <div class="hidden lg:flex gap-10 text-[9px] uppercase tracking-[0.2em] font-medium text-gray-500">
+            <a href="#catalogs" class="hover:text-rose-dark transition">Каталог</a>
+            <a href="#services" class="hover:text-rose-dark transition">Бизнесу</a>
+            <a href="#services" class="hover:text-rose-dark transition">Декор</a>
             <a href="#" class="hover:text-rose-dark transition">О нас</a>
         </div>
-        <button class="btn-primary px-8 py-2.5 rounded-btn text-[9px] uppercase tracking-widest font-bold">Связаться</button>
+        <button class="btn-primary px-6 md:px-8 py-2.5 rounded-btn text-[9px] uppercase tracking-widest font-bold">Связаться</button>
     </nav>
 
     <!-- Hero Section -->
@@ -123,10 +126,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
             <!-- Махачкала -->
             <div class="group cursor-pointer">
-                <div class="img-card h-[550px] rounded-img relative mb-8">
+                <div class="img-card h-[400px] md:h-[550px] rounded-img relative mb-8">
                     <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700"></div>
-                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">Махачкала</span>
-                    <!--  -->
+                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">[Фото цветов в Махачкале]</span>
                 </div>
                 <div class="text-center">
                     <h3 class="serif-font text-2xl font-light mb-2 uppercase tracking-widest">Махачкала</h3>
@@ -135,10 +137,9 @@
             </div>
             <!-- Буйнакск -->
             <div class="group cursor-pointer">
-                <div class="img-card h-[550px] rounded-img relative mb-8">
+                <div class="img-card h-[400px] md:h-[550px] rounded-img relative mb-8">
                     <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700"></div>
-                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">Буйнакск</span>
-                    <!--  -->
+                    <span class="text-[10px] uppercase tracking-[0.4em] opacity-40">[Фото цветов в Буйнакске]</span>
                 </div>
                 <div class="text-center">
                     <h3 class="serif-font text-2xl font-light mb-2 uppercase tracking-widest">Буйнакск</h3>
@@ -162,15 +163,15 @@
                     </p>
                     <button class="border-b-2 border-rose-light pb-2 text-[10px] uppercase tracking-[0.3em] font-bold hover:border-rose-dark transition-all">Получить предложение</button>
                 </div>
-                <div class="order-1 md:order-2 img-card h-[450px] rounded-img shadow-2xl shadow-rose-light">
-                    <span class="text-[10px] uppercase tracking-widest opacity-30">Business Concept</span>
+                <div class="order-1 md:order-2 img-card h-[350px] md:h-[450px] rounded-img shadow-2xl shadow-rose-light">
+                    <span class="text-[10px] uppercase tracking-widest opacity-30">[Изображение для бизнеса]</span>
                 </div>
             </div>
 
             <!-- Декор -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-                <div class="img-card h-[450px] rounded-img shadow-2xl shadow-rose-light">
-                    <span class="text-[10px] uppercase tracking-widest opacity-30">Wedding & Events</span>
+                <div class="img-card h-[350px] md:h-[450px] rounded-img shadow-2xl shadow-rose-light">
+                    <span class="text-[10px] uppercase tracking-widest opacity-30">[Оформление мероприятий]</span>
                 </div>
                 <div class="px-4">
                     <h4 class="text-[10px] uppercase tracking-[0.5em] text-rose-dark mb-6 font-bold">Event Decor</h4>
